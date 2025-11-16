@@ -1,10 +1,4 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-function App() {
-  return (
-    <h1>Hello World from React!</h1>
-  );
-}
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -37,7 +31,3 @@ function App() {
 }
 
 export default App;
-
-
-export default App;
-
