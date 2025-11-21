@@ -9,17 +9,15 @@ const Dashboard = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!loading && !user) {
-      navigate("/login"); // redirect if not logged in
-    }
+    if (!loading && !user) navigate("/login"); // redirect if not logged in
   }, [user, loading, navigate]);
 
   if (loading) return <h2>Loading...</h2>;
 
   return (
     <div>
-      <h1>Welcome to Dashboard</h1>
-      <p>User: {user?.email}</p>
+      <h1>Dashboard</h1>
+      <p>Welcome, {user?.email}</p>
     </div>
   );
 };
